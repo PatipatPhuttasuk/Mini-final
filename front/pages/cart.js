@@ -5,11 +5,11 @@ import axios from "axios"
 import withAuth from "../components/withAuth"
 import config from "../config/config"
 
-const useStyles = makeStyles({
-  table: {
-    minWidth: 650,
-  },
-})
+// const useStyles = makeStyles({
+//   table: {
+//     minWidth: 650,
+//   },
+// })
 
 const Cart = ({ token }) => {
   const [user, setUser] = useState([])
@@ -112,7 +112,7 @@ const Cart = ({ token }) => {
                     </td>
                     <td className="px-6 py-4 text-right">
                       <button onClick={() => remove(val.id)}>
-                        <DeleteIcon />
+                        Delete
                       </button>
                     </td>
                   </tr>
